@@ -1,0 +1,69 @@
+:root {
+    --cursor-color: rgba(255, 255, 255, 0.6);
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-name {
+    content: "Howdy!";
+    font-family: "Courier New", monospace;
+    overflow: hidden;
+    position: relative;
+    width: 8.5em;
+    border-right: 2px solid transparent;
+    font-size: 36px;
+    white-space: nowrap;
+
+    /* typewriter animation */
+    animation: typewriter 4s steps(25) 2s 1 normal both,
+               blinkingCursor 750ms steps(2) 0s infinite normal;
+}
+
+#portrait {
+    /* margin-top: auto; */
+    border: 3px solid #ff90a1;
+    width: 25%;
+    border-radius: 100%;
+}
+
+@keyframes blinkingCursor {
+    from {
+        border-right-color: var(--cursor-color);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+
+    10% {
+        width: 2em;
+    }
+
+    40% {
+        width: 2em;
+    }
+
+    70% {
+        width: 10em;
+    }
+
+    95% {
+        width: 10em;
+    }
+
+    100% {
+        width: 8.5em;
+    }
+}
