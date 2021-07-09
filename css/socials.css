@@ -1,0 +1,12 @@
+.social-links {
+    /*
+    Use this in .social-links and #portrait in order to shift the
+    social icons to the bottom of the page. 
+    margin-top: auto; 
+    */
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
