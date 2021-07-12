@@ -21,7 +21,7 @@
     white-space: nowrap;
 
     /* typewriter animation */
-    animation: typewriter 4s steps(25) 2s 1 normal both,
+    animation: typewriter 4s steps(25) 1s 1 normal both,
                blinkingCursor 750ms steps(2) 0s infinite normal;
 }
 

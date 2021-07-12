@@ -1,17 +1,37 @@
 :root {
-
+    --form-background-color: rgb(253, 160, 174);
+    --background-color: lightpink;
 }
 
 .contact-form {
+    height: 500px;
+    width: 30%;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 255, 0.25);
-    margin-left: 2%;
+    justify-content: top;
+    background-color: var(--form-background-color);
+    border-radius: 1%;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    margin-top: 5px;
+    background-color: rgb(253, 213, 219);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
 }
 
 .contact-form label {
+    width: 90%;
+    margin-top: 10px;
     font-size: 18px;
     font-weight: 600;
 }
@@ -21,7 +41,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.25);
     margin-right: 2%;
 }
 
@@ -35,4 +54,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#message {
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+#submit {
+    width: auto;
+    margin-bottom: 10px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
 }
