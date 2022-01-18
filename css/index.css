@@ -67,3 +67,9 @@
         width: 8.5em;
     }
 }
+
+@media screen and (max-width: 750px) {
+    #portrait {
+        width: 193px;
+    }
+}
