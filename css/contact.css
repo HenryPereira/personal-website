@@ -42,6 +42,8 @@
     align-items: center;
     justify-content: center;
     margin-right: 2%;
+
+    text-align: center;
 }
 
 .contact-info p {
@@ -71,4 +73,16 @@
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-content {
+        padding-top: 40px;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 60%;
+        margin: 0;
+    }
 }
